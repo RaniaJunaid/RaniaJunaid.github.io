@@ -91,13 +91,6 @@ const portfolioData = {
       github: "https://github.com/RaniaJunaid/Tic-Tac-Toe",
     },
     {
-      title: "Personal Productivity Hub",
-      description: "Full-stack CRUD application with Node.js/Express backend and MongoDB. Implements task management with RESTful APIs and NoSQL queries.",
-      tech: ["Node.js", "Express", "MongoDB", "REST API"],
-      category: "Web",
-      github: "#",
-    },
-    {
       title: "Huge Integer / Fraction",
       description: "A C++ library implementing arbitrary-precision integers and fractions with full operator overloading. Numbers of any size — far beyond the 64-bit integer limit — are handled entirely from scratch using digit vectors, with no external libraries.",
       tech: ["C++","OOP"],
