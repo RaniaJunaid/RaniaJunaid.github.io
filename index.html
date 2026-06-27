@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rania — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">R.</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a class="nav-cv-btn" id="cvNavBtn" href="#" target="_blank">
+            Download CV
+          </a>
+        </li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon">☀</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a id="cvMobileBtn" href="#" target="_blank">Download CV</a>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-eyebrow reveal">Computer Science · ITU Lahore</div>
+      <h1 class="hero-name reveal" id="heroName">Rania</h1>
+      <p class="hero-tagline reveal" id="heroTagline">
+        Building at the intersection of systems, AI, and the web.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-scroll-hint reveal">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+    <div class="hero-grid-bg"></div>
+  </section>
+
+  <!-- ── About ── -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-label reveal">About</div>
+      <div class="about-layout">
+        <div class="about-text reveal">
+          <h2>CS student obsessed with <span class="accent">building things</span> that work.</h2>
+          <p id="aboutBio">
+            I'm a 4th-semester BSCS student at Information Technology University, Lahore.
+            My work spans low-level systems programming in C++ and x86 assembly,
+            machine learning pipelines, and full-stack web development.
+          </p>
+          <p>
+            I care about writing clean code, understanding things from first principles,
+            and shipping projects that solve real problems.
+          </p>
+          <a class="btn-primary" id="aboutCvBtn" href="#" target="_blank">Download CV →</a>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <span class="stat-num">8+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">4</span>
+            <span class="stat-label">Semesters Completed</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Languages & Stacks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ── -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-label reveal">Skills</div>
+      <h2 class="section-title reveal">Tech I work with</h2>
+      <div class="skills-filter reveal" id="skillsFilter">
+        <button class="filter-btn active" data-filter="All">All</button>
+        <button class="filter-btn" data-filter="AI/ML">AI / ML</button>
+        <button class="filter-btn" data-filter="Systems">Systems</button>
+        <button class="filter-btn" data-filter="Web">Web</button>
+        <button class="filter-btn" data-filter="Database">Database</button>
+        <button class="filter-btn" data-filter="Tools">Tools</button>
+      </div>
+      <div class="skills-grid reveal" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ── Projects ── -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-label reveal">Projects</div>
+      <h2 class="section-title reveal">Things I've built</h2>
+      <div class="project-filter reveal" id="projectFilter">
+        <button class="filter-btn active" data-filter="All">All</button>
+        <button class="filter-btn" data-filter="AI/ML">AI / ML</button>
+        <button class="filter-btn" data-filter="Systems">Systems</button>
+        <button class="filter-btn" data-filter="Web">Web</button>
+        <button class="filter-btn" data-filter="Assembly">Assembly</button>
+        <button class="filter-btn" data-filter="Database">Database</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="section-label reveal">Contact</div>
+      <h2 class="section-title reveal">Let's connect</h2>
+      <p class="contact-sub reveal">
+        Open to internship opportunities, collaborations, and interesting conversations.
+      </p>
+      <div class="contact-links reveal" id="contactLinks">
+        <a class="contact-card" id="emailLink" href="#">
+          <span class="contact-icon">✉</span>
+          <div>
+            <div class="contact-type">Email</div>
+            <div class="contact-value" id="emailDisplay">your.email@example.com</div>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+        <a class="contact-card" id="githubLink" href="#" target="_blank">
+          <span class="contact-icon">⌥</span>
+          <div>
+            <div class="contact-type">GitHub</div>
+            <div class="contact-value">View my code</div>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+        <a class="contact-card" id="linkedinLink" href="#" target="_blank">
+          <span class="contact-icon">◈</span>
+          <div>
+            <div class="contact-type">LinkedIn</div>
+            <div class="contact-value">Connect with me</div>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+        <a class="contact-card" id="leetcodeLink" href="#" target="_blank">
+            <span class="contact-icon">⟨/⟩</span>
+            <div>
+                <div class="contact-type">LeetCode</div>
+                <div class="contact-value">My solutions</div>
+            </div>
+            <span class="contact-arrow">→</span>
+        </a> 
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="footer-inner">
+      <span id="footerName">Rania</span>
+      <span class="footer-dot">·</span>
+      <span>BSCS @ ITU Lahore</span>
+      <span class="footer-dot">·</span>
+      <span id="footerYear"></span>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
