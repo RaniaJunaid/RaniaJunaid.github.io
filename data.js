@@ -11,11 +11,11 @@ const portfolioData = {
     title: "Computer Science Student",
     subtitle: "ITU Lahore · 4th Semester BSCS",
     tagline: "Building at the intersection of systems, AI, and the web.",
-    email: "rania25leo@gmail.com",         // ← replace
-    github: "https://github.com/RaniaJunaid", // ← replace
-    linkedin: "https://www.linkedin.com/in/rania-junaid-75598336a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app", // ← replace
-    leetcode: "https://leetcode.com/u/UaBeIRgmBL/", // ← replace
-    cvLink: "https://drive.google.com/file/d/1vHR8Tub0EoC2s_5_zVJdLND0a27yt1it/view?usp=drivesdk", // ← replace with your CV PDF link or path
+    email: "rania25leo@gmail.com",         
+    github: "https://github.com/RaniaJunaid", 
+    linkedin: "https://www.linkedin.com/in/rania-junaid-75598336a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app", 
+    leetcode: "https://leetcode.com/u/UaBeIRgmBL/", 
+    cvLink: "https://drive.google.com/file/d/1vHR8Tub0EoC2s_5_zVJdLND0a27yt1it/view?usp=drivesdk", 
   },
 
   // ── Skills
@@ -34,6 +34,9 @@ const portfolioData = {
     { name: "Node.js",     category: "Web"      },
     { name: "SQL",         category: "Database" },
     { name: "Git",         category: "Tools"    },
+    { name: "GitHub",      category: "Tools"    },
+    { name: "VS Code",     category: "Tools"    },
+    { name: "Android Studio",         category: "Tools"    },
   ],
 
   // ── Projects ──────────────────────────────────────────────
